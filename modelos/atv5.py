@@ -1,13 +1,12 @@
 
-# Crie uma classe chamada Restaurante com os atributos nome, categoria, ativo e crie mais 2 atributos. Instancie um restaurante e atribua valores aos seus atributos.
+# Modifique a classe Restaurante adicionando um construtor que aceita nome e categoria como parâmetros e inicia ativo como False por padrão. Crie uma instância utilizando o construtor.
 class Restaurante:
-    def __init__(self,nome,categoria,aluguel,ativo,alvara):
+    def __init__(self,nome,categoria,aluguel,alvara = False,ativo = False):
         
         self.nome =nome 
         self.categoria = categoria
         self.aluguel = aluguel 
-        self.ativo = ativo
         self.alvara = alvara 
+        self.ativo = ativo
         
-        
-rest_modelo = Restaurante('Albatroz','massas',1200,True,True)
+rest_modelo = Restaurante('Albatroz','massas')
